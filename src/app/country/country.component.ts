@@ -14,6 +14,9 @@ export class CountryComponent implements OnInit {
   constructor(private countryService: CountryService) { }
 
   ngOnInit() {
+    this.countryService.countryList.subscribe(() => {
+      this.isListView = true;
+    });
   }
   countryDetailSelected(countryDetail: Country){
     this.isListView = false;
