@@ -1,0 +1,30 @@
+<div>
+  <h2>{{ countryDetail.name }}</h2>
+  <div class="countryDetail">
+    <p>
+      <label>Capital</label>
+      <span>{{
+        countryDetail.capital === "" ? "NA" : countryDetail.capital
+      }}</span>
+    </p>
+    <p>
+      <label>Population</label>
+      <span>{{ countryDetail.population }}</span>
+    </p>
+    <p>
+      <label>Currency Name</label>
+      <span>{{ countryDetail.currency }}</span>
+    </p>
+    <p>
+      <label>Languages</label>
+      <span>{{ countryDetail.languages.join(", ") }}</span>
+    </p>
+  </div>
+  <div class="countryFlag">
+    <img
+      class="flagImg"
+      src="{{ countryDetail.flagUrl }}"
+      alt="countryDetail.flagUrl"
+    />
+  </div>
+</div>

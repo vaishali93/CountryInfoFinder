@@ -1,0 +1,18 @@
+<div>
+  <app-country-list
+    *ngIf="isListView"
+    (countryDetail)="countryDetailSelected($event)"
+  ></app-country-list>
+  <app-country-detail
+    *ngIf="!isListView"
+    [countryDetail]="countryDetail"
+  ></app-country-detail>
+  <button
+    type="button"
+    *ngIf="!isListView"
+    class="backButton"
+    (click)="onListReload()"
+  >
+    Back
+  </button>
+</div>

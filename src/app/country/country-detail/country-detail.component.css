@@ -1,0 +1,20 @@
+.countryDetail {
+  display: inline-block;
+  width: 60%;
+}
+.countryFlag {
+  width: 40%;
+  float: right;
+}
+
+label {
+  display: inline-block;
+  width: 40%;
+  font-weight: bold;
+}
+
+.flagImg {
+  width: 250px;
+  float: right;
+  margin-right: 20px;
+}

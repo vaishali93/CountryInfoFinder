@@ -1,0 +1,11 @@
+<h3>Recent Searches</h3>
+<div *ngIf="countrySearchList.length > 0; else noSearchMsg">
+  <ul>
+    <li *ngFor="let country of countrySearchList">
+      <a href="#" (click)="loadList($event)">{{ country }}</a>
+    </li>
+  </ul>
+</div>
+<ng-template #noSearchMsg>
+  <p>No recent searches...</p>
+</ng-template>

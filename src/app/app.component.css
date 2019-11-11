@@ -1,0 +1,22 @@
+.leftDiv{
+    width: 75%;
+    display: inline-block;
+    border-right: 1px solid black;
+    padding: 2%;
+    min-height: 200px;
+}
+
+.rightDiv{
+    width: 19%;
+    float: right;
+}
+
+.container{
+    padding: 10%;
+    height:500px;
+}
+
+.detailContainer{
+    border: 1px solid black;
+}
+

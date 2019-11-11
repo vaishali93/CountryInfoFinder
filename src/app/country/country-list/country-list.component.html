@@ -1,0 +1,22 @@
+<div *ngIf="filteredCountries.length > 0; else welcomeMsg">
+  <p>Top Matches</p>
+  <ul>
+    <li *ngFor="let country of filteredCountries">
+      <a href="#" (click)="selectedCountry($event)">{{ country }}</a>
+    </li>
+  </ul>
+</div>
+<ng-template #welcomeMsg>
+  <div class="welcomeDiv">
+    <h3>Welcome to the country details finder app!!</h3>
+    <p>Enter a country name in the above text box to more..</p>
+    <p>
+      For a valid country name entered, it shows the list of matching countries.
+      You can click on each link to know more.
+    </p>
+    <p>
+      The right ride Recent searches sections shows the last 5 recently searched
+      country names..
+    </p>
+  </div>
+</ng-template>
